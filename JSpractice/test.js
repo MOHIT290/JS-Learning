@@ -1,2 +1,5 @@
 console.log("Mohit!")
-console.log("Abcd")
+
+const score="45t"
+
+console.log(typeof score)
