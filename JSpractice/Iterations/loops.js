@@ -1,19 +1,36 @@
-// let arr=[2,4,6,8,9]
+//Map
+const map = new Map()
 
-// for (const val of arr) {
-    
-//     console.log(val)
-// }
+map.set("JS", "JavaScript")
+map.set("fb", "facebook")
 
-const map=new Map()
+for (const [key, val] of map) {
+    console.log(key + ":-" + val)
+}
 
-map.set("JS","JavaScript")
-map.set("fb","facebook")
+// +++++  Map cannot be used with forin Loop ++++++++++++++++
 
-for (const [key,val] of map) {
-    console.log(key +":-" +val)
+//Array
+const programming = ["js", "C++", "Ruby", "JAVA", "python", "react"]
+
+for (const key of programming) {
+    console.log(key)
+}
+
+for (const key in programming) {
+    console.log(`Value at index ${key} is ${programming[key]}`)
 }
 
 
+// Object
+const user={
 
+city:"Kota",
+state:"Rajasthan"
+
+}
+
+for (const i in user) {
+    console.log(`key is ${i} and value is ${user[i]}`)
+}
 
