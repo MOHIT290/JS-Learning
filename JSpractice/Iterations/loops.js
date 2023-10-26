@@ -23,14 +23,47 @@ for (const key in programming) {
 
 
 // Object
-const user={
+const user = {
 
-city:"Kota",
-state:"Rajasthan"
+    city: "Kota",
+    state: "Rajasthan"
 
 }
 
-for (const i in user) {
-    console.log(`key is ${i} and value is ${user[i]}`)
+// for (const i in user) {
+//     console.log(`key is ${i} and value is ${user[i]}`)
+// }
+
+
+function printme(item) {
+    console.log(`One of item names is ${item}`)
 }
+
+programming.forEach(printme);
+
+
+const arrofobj = [
+    {
+        city: "Kota",
+        state: "Rajasthan"
+
+    },
+    {
+        city: "Jaipur",
+        state: "Rajasthan"
+
+    }
+]
+
+arrofobj.forEach((item) => {
+
+    for (const key in item) {
+
+        console.log(`Key is ${key} and value is ${item[key]}`)
+
+    }
+})
+
+
+
 
