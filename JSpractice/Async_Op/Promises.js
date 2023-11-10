@@ -8,7 +8,7 @@ const promise1 = new Promise(function (res, rej) {
 
         if (!error) {
             console.log("This is promise1, and it is getting executed")
-            res({ username: "Mohit", aim: "Paisa kamana" })
+            res({username: "Mohit", aim: "Paisa kamana" })
         }
 
         else {
@@ -37,7 +37,7 @@ const promise2 = new Promise(function (res, rej) {
         const error = 0
 
         if (!error) {
-            console.log("This is promise1, and it is getting executed")
+            console.log("This is promise2, and it is getting executed")
             res({ username: "Mohit", aim: "Paisa kamana" })
         }
 
@@ -63,3 +63,23 @@ async function consumepromise2() {
 }
 
 consumepromise2()
+
+
+//+++++++++++++++++++++++++
+
+
+async function fetchwithTrycatch() {
+
+    try {
+        const res = await fetch('https://randomuser.me/api/')
+        const data = await res.json()
+        console.log(data)
+    } 
+    catch (error) {
+console.log(error)
+    }
+
+}
+
+
+fetchwithTrycatch()
