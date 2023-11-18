@@ -35,7 +35,7 @@ const person = {
     // Setter
     set name(newName) {
         console.log('Setting name');
-        this._name = newName;
+   //     this._name = newName;
 
     }
 };
@@ -49,3 +49,5 @@ console.log(tea.name); // Output: Getting name
 // The properties are inherited from the person 
 // object through the prototype chain.
 
+//If you want to see the inherited properties in the console,
+// you can use console.dir(tea):
